@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Gloria Hallelujah', cursive;
+}
+main {
+    height: 100vh;
+    background: #FFF;
+}
+h1 {
+    padding: 30px;
+    text-align: center;
+    font-size: 3rem;
+}
+#rockH1 {
+    color: #171212;
+}
+#paperH1 {
+    color: #AF2708;
+}
+#scissorsH1 {
+    color: #557F0E;
+}
+.game-container {
+    height: 90%;
+}
+.player {
+    height: 60%;
+    display: grid;
+    grid-template-rows: 70% 30%;
+}
+.player-choice {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid;
+    margin: 10px;
+}
+.player-choice h3 {
+    font-size: 1.8rem;
+}
+.btn-choice {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.btn-choice button {
+    background: none;
+    border: none;
+    transition: 0.2s;
+}
+.btn-choice button img {
+    border-radius: 20px;
+}
+.btn-choice button:active {
+    transform: scale(95%);
+}
+.random {
+    height: 40%;
+}
+.random-choice  {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid;
+    margin: 10px;
+}
+.random-choice h3 {
+    font-size: 1.8rem;      
+}
