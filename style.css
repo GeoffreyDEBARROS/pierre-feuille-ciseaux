@@ -5,14 +5,19 @@
     box-sizing: border-box;
     font-family: 'Gloria Hallelujah', cursive;
 }
-main {
+body {
     height: 100vh;
+}
+main {
+    height: 100%;
+    width: 100%;
     background: #FFF;
+    /* overflow: hidden; */
 }
 h1 {
-    padding: 30px;
+    padding: 20px;
     text-align: center;
-    font-size: 3rem;
+    font-size: 2rem;
 }
 #rockH1 {
     color: #171212;
@@ -25,9 +30,10 @@ h1 {
 }
 .game-container {
     height: 90%;
+    width: 100%;
 }
 .player {
-    height: 60%;
+    height: 50%;
     display: grid;
     grid-template-rows: 70% 30%;
 }
@@ -39,25 +45,28 @@ h1 {
     margin: 10px;
 }
 .player-choice h3 {
-    font-size: 1.8rem;
+    font-size: 1.5rem;
 }
 .btn-choice {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    height: 80px;
 }
 .btn-choice button {
     background: none;
     border: none;
     transition: 0.2s;
+    height: 80px;
 }
 .btn-choice button img {
     border-radius: 20px;
+    height: 80px;
 }
 .btn-choice button:active {
     transform: scale(95%);
 }
 .random {
-    height: 40%;
+    height: 35%;
 }
 .random-choice  {
     height: 100%;
@@ -68,5 +77,5 @@ h1 {
     margin: 10px;
 }
 .random-choice h3 {
-    font-size: 1.8rem;      
+    font-size: 1.5rem;      
 }
