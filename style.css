@@ -37,15 +37,24 @@ h1 {
     display: grid;
     grid-template-rows: 70% 30%;
 }
+#player-score {
+    position: absolute;
+    font-size: 2rem;
+    left: 20px;
+}
+.player:before {
+    content: "Vous";
+    position: absolute;
+    color: #171212;
+    left: 50%;
+    transform: translate(-50%, -60%);
+}
 .player-choice {
     display: flex;
     justify-content: center;
     align-items: center;
     border: 2px solid;
     margin: 10px;
-}
-.player-choice h3 {
-    font-size: 1.5rem;
 }
 .btn-choice {
     display: grid;
@@ -67,6 +76,18 @@ h1 {
 }
 .random {
     height: 35%;
+}
+#random-score {
+    position: absolute;
+    font-size: 2rem;
+    left: 20px;
+}
+.random:before {
+    content: "Ordinateur";
+    position: absolute;
+    color: #171212;
+    left: 50%;
+    transform: translate(-50%, -90%);
 }
 .random-choice  {
     height: 100%;
