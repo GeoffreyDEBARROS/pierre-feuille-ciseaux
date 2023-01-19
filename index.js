@@ -44,6 +44,8 @@ rock.addEventListener("click", () => {
       playerChoice.innerHTML = "<h3>Victoire </h3>";
       playerPoints = 0;
       randomPoints = 0;
+      playerScore.innerHTML = playerPoints;
+      randomScore.innerHTML = randomPoints;
     }, 1500);
   }
   if (randomPoints == 3) {
@@ -86,6 +88,8 @@ paper.addEventListener("click", () => {
       playerChoice.innerHTML = "<h3>Victoire</h3>";
       playerPoints = 0;
       randomPoints = 0;
+      playerScore.innerHTML = playerPoints;
+      randomScore.innerHTML = randomPoints;
     }, 1500);
   }
   if (randomPoints == 3) {
@@ -128,6 +132,8 @@ scissors.addEventListener("click", () => {
       playerChoice.innerHTML = "<h3>Victoire</h3>";
       playerPoints = 0;
       randomPoints = 0;
+      playerScore.innerHTML = playerPoints;
+      randomScore.innerHTML = randomPoints;
     }, 1500);
   }
   if (randomPoints == 3) {
