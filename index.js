@@ -29,6 +29,32 @@ rock.addEventListener("click", () => {
   setTimeout(() => {
     randomChoice.innerHTML = "";
   }, 1500);
+
+  if (random === 2) {
+    playerPoints++;
+  } else if (random === 1) {
+    randomPoints++;
+  }
+
+  playerScore.innerHTML = playerPoints;
+  randomScore.innerHTML = randomPoints;
+
+  if (playerPoints == 3) {
+    setTimeout(() => {
+      playerChoice.innerHTML = "<h3>Victoire </h3>";
+      playerPoints = 0;
+      randomPoints = 0;
+    }, 1500);
+  }
+  if (randomPoints == 3) {
+    setTimeout(() => {
+      playerChoice.innerHTML = "<h3>Défaite </h3>";
+      playerPoints = 0;
+      randomPoints = 0;
+      playerScore.innerHTML = playerPoints;
+      randomScore.innerHTML = randomPoints;
+    }, 1500)
+  }
 });
 
 paper.addEventListener("click", () => {
@@ -45,6 +71,32 @@ paper.addEventListener("click", () => {
   setTimeout(() => {
     randomChoice.innerHTML = "";
   }, 1500);
+
+  if (random === 0) {
+    playerPoints++;
+  } else if (random === 2) {
+    randomPoints++;
+  }
+
+  playerScore.innerHTML = playerPoints;
+  randomScore.innerHTML = randomPoints;
+
+  if (playerPoints == 3) {
+    setTimeout(() => {
+      playerChoice.innerHTML = "<h3>Victoire</h3>";
+      playerPoints = 0;
+      randomPoints = 0;
+    }, 1500);
+  }
+  if (randomPoints == 3) {
+    setTimeout(() => {
+      playerChoice.innerHTML = "<h3>Défaite</h3>";
+      playerPoints = 0;
+      randomPoints = 0;
+      playerScore.innerHTML = playerPoints;
+      randomScore.innerHTML = randomPoints;
+    }, 1500)
+  }
 });
 
 scissors.addEventListener("click", () => {
@@ -61,4 +113,31 @@ scissors.addEventListener("click", () => {
   setTimeout(() => {
     randomChoice.innerHTML = "";
   }, 1500);
+
+  if (random === 1) {
+    playerPoints++;
+  } else if (random === 0) {
+    randomPoints++;
+  }
+
+  playerScore.innerHTML = playerPoints;
+  randomScore.innerHTML = randomPoints;
+
+  if (playerPoints == 3) {
+    setTimeout(() => {
+      playerChoice.innerHTML = "<h3>Victoire</h3>";
+      playerPoints = 0;
+      randomPoints = 0;
+    }, 1500);
+  }
+  if (randomPoints == 3) {
+    setTimeout(() => {
+      playerChoice.innerHTML = "<h3>Défaite</h3>";
+      playerPoints = 0;
+      randomPoints = 0;
+      playerScore.innerHTML = playerPoints;
+      randomScore.innerHTML = randomPoints;
+    }, 1500)
+  }
+  
 });
